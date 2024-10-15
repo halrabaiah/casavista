@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/casa-vista-logo.ico" type="image/x-icon">
+    <title>Casa Vista Granada</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <li><a href="#" onclick="switchLanguage('en')">English</a></li>
+    <li><a href="#" onclick="switchLanguage('es')">Español</a></li>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* WhatsApp Icon styling */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-icon:hover {
+            background-color: #1ebe55;
+        }
+        /* Adjust page content so it doesn't overlap */
+        body {
+            margin-bottom: 80px; /* Extra margin for the icon */
+        }
+    </style>
+    
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#home">
+                <img src="images/casa-vista-logo.jpg" alt="Casa Vista Logo" class="logo">
+            </a>
+            <h1 class="header-title">Casa Vista Granada</h1>
+    
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="#founder-section">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <div class="language-switcher">
+                <button onclick="switchLanguage('en')">
+                    <img src="images/flag-en.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="switchLanguage('es')">
+                    <img src="images/flag-es.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+    
+            <div class="contact-info">
+                <a href="tel:+34633420240" class="phone-link">
+                    <i class="fas fa-phone"></i> +34 633420240
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    <section id="home">
+        <div class="home-content">
+            <div class="lang en">
+                <h2>Your Gateway to Granada’s Finest Homes</h2>
+                <h2>Management of tourist and holiday accommodation in Granada</h2>
+                <p>Discover handpicked holiday homes with scenic views and modern amenities.</p>
+                <img src="images/granada-view1.jpg" alt="View of Granada" >
+            </div>
+            <div class="lang es" style="display: none;">
+                <h2>Tu puerta de entrada a las mejores casas de Granada</h2>
+                <h2> Gestión de Alojamientos Turísticos y vacacionales en Granada</h2>
+                <p>Descubre casas de vacaciones seleccionadas a mano con vistas impresionantes y comodidades modernas.</p>
+                <img src="images/granada-view1.jpg" alt="View of Granada" >
+            </div>
+        </div>
+    </section>
+    
+    <section id="founder-section" class="founder-section">
+        <div class="container">
+            <!-- English Text -->
+            <div class="founder-info lang en">
+                <h2>About the Founder</h2>
+                <p>
+                    <strong>My name is Hazem, founder of CASA VISTA GRANADA and expert in Revenue Management:</strong>
+                    I work under the strategy of managing and renting your property to the right client at the right time
+                    and at the price you deserve.
+                </p>
+                <h4>Our goal is for the owner to feel safe renting their home and for the guest to enjoy a unique experience.</h4>
+            </div>
+    
+            <!-- Spanish Text -->
+            <div class="founder-info lang es" style="display: none;">
+                <h2>Sobre el Fundador</h2>
+                <p>
+                    <strong>Me llamo Hazem, founder de CASA VISTA GRANADA y experta en Revenue Management:</strong>
+                    trabajo bajo la estrategia de gestionar y alquilar tu inmueble al cliente adecuado,
+                    en el momento apropiado y al precio que te mereces.
+                </p>
+                <h4>Nuestro objetivo es que el propietario se sienta seguro con el alquiler de su vivienda y el huésped disfrute de una experiencia única.</h4>
+            </div>
+    
+            <!-- Image next to the text -->
+            <div class="founder-photo">
+                <img src="images/founder-photo1.jpg" alt="Founder Hazem">
+            </div>
+        </div>
+    </section>
+    
+    <!-- WhatsApp Icon that opens chat -->
+    <a href="https://wa.me/34633420240" class="whatsapp-icon" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- JavaScript for Language Switching -->
+    <script src="script.js">
+       
+    </script>
+</body>
+<section id="services-section" class="services-section">
+    <div class="container">
+        <!-- English Text -->
+        <div class="lang en">
+            <h2><strong>What Services Do We Offer?</strong></h2>
+            <h3><strong>CUSTOMIZED MANAGEMENT</strong></h3>
+        </div>
+
+        <!-- Spanish Text -->
+        <div class="lang es" style="display: none;">
+            <h2><strong>¿Qué Servicios Ofrecemos?</strong></h2>
+            <h3><strong>GESTIÓN A TU MEDIDA</strong></h3>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="services-content">
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="images/comprehensive-management.jpg" alt="Comprehensive Management">
+                </div>
+                <div class="service-description">
+                    <div class="lang en">
+                        <h4>Comprehensive Management</h4>
+                        <p>This is a complete service so you don't have to worry about anything. We manage 100% of your apartment or house in Santander: from creating listings, publishing them on the best rental platforms like Airbnb or Booking.com, photographing the property, advising and communicating with guests, to managing bookings, price implementation, guest payments, not to mention professional cleaning and laundry services.</p>
+                        <p>We also take care of welcoming the guests into your home, providing them with tourist information about the city, and explaining the particularities and rules of the accommodation.</p>
+                        <p>We handle the entire process transparently and securely so that you don't have to worry about anything.</p>
+                    </div>
+                    <div class="lang es" style="display: none;">
+                        <h4>Gestión Integral</h4>
+                        <p>Se trata de un servicio completo para que no tengas que preocuparte de nada. Gestionamos al 100% tu apartamento o casa en Santander: desde la elaboración de los anuncios, su publicación en las mejores plataformas de alquiler como Airbnb o Booking.com, la fotografía de la estancia, el asesoramiento y la comunicación con los huéspedes, hasta la gestión de las reservas, implementación de precios, los cobros a los huéspedes, sin olvidar la limpieza profesional y el servicio de lavandería.</p>
+                        <p>También me encargo de recibir a los huéspedes en tu vivienda ofreciéndoles información turística de la ciudad e indicándoles las particularidades y normas del alojamiento.</p>
+                        <p>Todo el proceso lo llevamos de una manera transparente y segura, para que no tengas que preocuparte por nada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="images/partial-management.jpg" alt="Partial Management">
+                </div>
+                <div class="service-description">
+                    <div class="lang en">
+                        <h4>Partial Management</h4>
+                        <p>If you prefer to welcome your guests and take care of the cleaning, this is the perfect option! We will manage the rental of your vacation home on the main platforms in any city in Spain.</p>
+                        <p>We will create the listing on all platforms, keep your calendar updated, position you online, optimize pricing daily, communicate with guests, and advise them on the city's tourist points before their stay...</p>
+                        <p>In short, "We bring clients to your doorstep," and all you have to do is welcome them.</p>
+                    </div>
+                    <div class="lang es" style="display: none;">
+                        <h4>Gestión Parcial</h4>
+                        <p>Si prefieres recibir a tus huéspedes y encargarte de la limpieza, ¡esta es la opción perfecta! Desde El Puntal Houses, gestionaré el alquiler de tu vivienda vacacional en las principales plataformas en cualquier ciudad de España.</p>
+                        <p>Nos encargamos de confeccionar el anuncio en todas las plataformas, mantener tu calendario actualizado, posicionarte en Internet, realizar una optimización del precio diaria, comunicarme con los huéspedes, aconsejarles sobre los puntos turísticos de la ciudad antes de su estancia…</p>
+                        <p>En definitiva, “llevamos a los clientes a la puerta de tu casa” y solo tendrás que recibirles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <!-- Row 1: Contact Form and Contact Us Text -->
+        <div class="row top-row">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h3>Contact Form</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="14c6a543-cef3-4a72-bcb4-b5ccae191cd3">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Us Text -->
+            <div class="contact-text">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Fill out the form or reach out directly using the information provided.</p>
+            </div>
+        </div>
+
+        <!-- Row 2: Map and Contact Info -->
+        <div class="row bottom-row">
+            <!-- Map -->
+            <div class="map">
+                <h3>Find Us Here - Aquí Estamos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.242466954469!2d-3.593090324336804!3d37.17070837214379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb0621d65d9%3A0x89558be37544287c!2sC.%20Molinos%2C%2068%2C%20Centro%2C%2018009%20Granada%2C%20Spain!5e0!3m2!1sen!2ssa!4v1728294189881!5m2!1sen!2ssa"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +34 633420240</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@casavista.es">info@casavista.es</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Calle Molinos 68, 18009, Granada, Spain</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const defaultLang = "es"; // Set to "es" for Spanish as the default language
+        switchLanguage(defaultLang);
+    });
+
+    function switchLanguage(lang) {
+        const elements = document.querySelectorAll('.lang');
+        elements.forEach(el => el.style.display = 'none');
+        const selectedLang = document.querySelectorAll(`.${lang}`);
+        selectedLang.forEach(el => el.style.display = 'block');
+    }
+    
+            // Language button event listeners
+            document.getElementById("englishBtn").addEventListener("click", function() {
+                setLanguage("en");
+            });
+    
+            document.getElementById("spanishBtn").addEventListener("click", function() {
+                setLanguage("es");
+            });
+    function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+  
+</script>
+<footer> 
+        <p>&copy; 2024 Casa Vista Granada</p>
+</footer>
+</body>
+</html>
